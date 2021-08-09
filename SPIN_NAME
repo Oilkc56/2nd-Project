@@ -1,0 +1,38 @@
+import random
+
+def x():
+    name_spin_1 = str(input('Enter name1 here:'))
+    print('.')
+    name_spin_2 = str(input('Enter name2 here:'))
+    print('.')
+    name_spin_3 = str(input('Enter name3 here:'))
+    print('.')
+    name_spin_4 = str(input('Enter name4 here:'))
+    print('.')
+    spine = [name_spin_1,name_spin_2,name_spin_3,name_spin_4]
+    print(spine)
+    enter = str(input('The list is correct? (Yes/No):'))
+    ok = 'Yes'
+    not_ok = 'No'
+    if enter == ok :
+        p = random.choice(spine)
+        print(f'Destiny choose you.. !!{p}!!')
+    elif enter == not_ok :
+        print('See you soon')
+    else:
+        print('Enter only Yes/No')
+        print('----------------------')
+        x()
+
+def main():
+    print('Welcome to my SPIN')
+    print('[ My SPIN want 4 people to use only ]')
+    case = str(input('Enter "ok" u want to use my spin :'))
+    proceed = 'ok'
+    if case == proceed :
+        x()
+    else:
+        print('Bye (╬▔皿▔)╯')
+
+if __name__ == '__main__':
+    main()
